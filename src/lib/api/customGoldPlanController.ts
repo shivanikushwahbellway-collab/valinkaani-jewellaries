@@ -30,11 +30,11 @@ export async function previewGoldPlan(
     `${API_BASE_URL}/user/show-gold-Plan`,
     { invested_amount: investedAmount },
     {
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
+      // headers: {
+      //   Authorization: `Bearer ${token}`,
+      //   "Content-Type": "application/json",
+      //   Accept: "application/json",
+      // },
     }
   );
   return res.data as PreviewGoldPlanResponse;
